@@ -32,3 +32,11 @@ const server = http.createServer((req, res) => {
     res.end('Hello from the server!');   //sending response to the client
 });
 
+
+server.listen(8000, '127.0.0.1', () => {
+    console.log('Listen to requests on port 8000');
+})
+
+// 127.0.0.1 is the local host and 8000 is the port
+
+// it will listen to the server first and then response
